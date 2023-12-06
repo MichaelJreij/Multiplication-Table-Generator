@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #008000;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px dotted #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.scrollable-container {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 30px;
+    scroll-snap-type: proximity;
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    bottom: 20px;
+    display: none;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.row_header {
+    top: 0;
+    position: sticky;
+    z-index: 10000;
+    color: white;
+    background-color: gray;
+}
+
+.column_header {
+    position: sticky;
+    left: 0;
+    background-color: gray;
+    color: white;
+    z-index: 20000;
+}
+
+.blank_header {
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 30000;
+    background-color: gray;
+}
+
+.form-instructions {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.ui-slider {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.ui-slider .ui-slider-range {
+    background: purple; /* Set the background color of the slider range to purple */
+}
+
+.ui-slider .ui-slider-handle {
+    background: purple; /* Set the background color of the slider handle to purple */
+    border-color: purple; /* Set the border color of the slider handle to purple */
+}
+
+#myTabs {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #636363;
+    background: #c2c2c2 none;
+}
+
+.ui-widget-header {
+    border: 0;
+    background: #c2c2c2 none;
+    font-family: Georgia;
+}
+
+#myTabs .ui-widget-content {
+    border: 1px solid #aaa;
+    background: #fff none;
+    font-size: 80%;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid #636363;
+    background: #a2a2a2 none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    border: 1px solid #aaa;
+    background: #fff none;
+}
+
+.table-container {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    scroll-snap-type: proximity;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-top: 13px;
+}

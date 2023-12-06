@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiplication Table Generator</title>
+  <link rel="stylesheet" href="CSS/table.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+</head>
+<body>
+<h1>Multiplication Table Generator</h1>
+
+<form id="multiplicationForm">
+  <div class="form-instructions">
+    Please enter values for the multiplication table:
+  </div>
+  <label for="startHorizontal">Start Row:</label>
+  <div id="sliderStartHorizontal"></div>
+  <input type="number" id="startHorizontal" name="startHorizontal"/>
+
+  <label for="endHorizontal">End Row:</label>
+  <div id="sliderEndHorizontal"></div>
+  <input type="number" id="endHorizontal" name="endHorizontal"/>
+
+  <label for="startVertical">Start Column:</label>
+  <div id="sliderStartVertical"></div>
+  <input type="number" id="startVertical" name="startVertical"/>
+
+  <label for="endVertical">End Column:</label>
+  <div id="sliderEndVertical"></div>
+  <input type="number" id="endVertical" name="endVertical"/>
+
+  <button type="submit">Generate Table</button>
+</form>
+<button id="deleteSelectedTabs">Delete Selected Tabs</button>
+<button id="deleteAllTabs">Delete All Tabs</button>
+
+<div id="tabs">
+  <ul>
+  </ul>
+</div>
+
+<div id="tableContainer" class="scrollable-container">
+  <table id="multiplicationTable">
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="js/multTable.js"></script>
+</body>
+</html>
